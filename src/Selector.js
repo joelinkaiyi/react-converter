@@ -104,7 +104,7 @@ export default function Selector() {
             style={{
               color: "#fff",
               position: "relative",
-              top: "5rem",
+              top: "3rem",
               left: "0.1rem",
               fontSize: "5rem",
             }}
@@ -112,7 +112,7 @@ export default function Selector() {
         </div>
       </div>
       <div>
-        <h2 style={{ color: "#fff", fontSize: "2rem", marginTop: "10rem" }}>
+        <h2 style={{ color: "#fff", fontSize: "2rem", marginTop: "5rem" }}>
           轉換到
         </h2>
         <TextField
