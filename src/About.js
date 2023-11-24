@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
     return (
-      <div style={{ textAlign: "left", marginLeft: "2.5rem" }}>
+      <div style={{ textAlign: "left"}}>
         <h1 style={{ color: "#fff", marginTop: "1rem", fontSize: "3rem" }}>
           通用的進位計算方法
         </h1>
