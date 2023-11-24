@@ -8,9 +8,9 @@ export default function Footer() {
   return (
     <Box
           sx={{
-          marginTop:'20.5rem',
+        //   marginTop:'20.5rem',
           padding: '2rem',
-          borderTop:'0.063rem solid #707070',  
+          borderTop:'0.063rem solid #404040',  
       }}
       component="footer"
     >
