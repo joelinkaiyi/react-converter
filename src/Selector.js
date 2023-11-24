@@ -61,7 +61,12 @@ export default function Selector() {
   };
 
   return (
-    <Box component="form" noValidate autoComplete="off">
+    <Box
+      component="form"
+      noValidate
+      autoComplete="off"
+      sx={{ borderBottom: "0.063rem solid #404040" }}
+    >
       <div>
         <h2 style={{ color: "#fff", fontSize: "2rem" }}>從</h2>
         <TextField
@@ -111,7 +116,7 @@ export default function Selector() {
           />
         </div>
       </div>
-      <div>
+      <div style={{marginBottom:'14rem'}}>
         <h2 style={{ color: "#fff", fontSize: "2rem", marginTop: "5rem" }}>
           轉換到
         </h2>
@@ -127,6 +132,7 @@ export default function Selector() {
             textAlign: "left",
             borderRadius: "0.625rem",
             marginLeft: "1rem",
+            marginBottom: "1rem",
           }}
         >
           {val.map((option) => (

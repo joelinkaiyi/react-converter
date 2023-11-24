@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import { createTheme } from '@mui/material/styles';
+
 
 
 const pages = ['Home', 'Services', 'Contact us'];
@@ -33,7 +33,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" style={{backgroundColor:'#404040'}} sx={{width:'100%'}}>
+    <AppBar position="sticky" style={{backgroundColor:'#404040'}} sx={{width:'100%'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

@@ -1,3 +1,4 @@
+import About from "./About";
 import "./App.css";
 import ResponsiveAppBar from "./appBar";
 import Footer from "./Footer";
@@ -9,6 +10,7 @@ function App() {
       <ResponsiveAppBar />
       <Title />
       <Selector />
+      <About />
       <Footer />
     </div>
   );
