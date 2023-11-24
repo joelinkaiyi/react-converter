@@ -2,11 +2,11 @@ import React from 'react'
 
 const About = () => {
     return (
-      <div style={{ textAlign: "left"}}>
-        <h1 style={{ color: "#fff", marginTop: "1rem", fontSize: "3rem" }}>
+      <div style={{ textAlign: "left",marginLeft:'0.5rem'}}>
+        <h1 style={{ color: "#fff", marginTop: "1rem", fontSize: "2rem" }}>
           通用的進位計算方法
         </h1>
-        <p style={{ color: "#fff", marginTop: "-1rem", fontSize: "1.5rem" }}>
+        <p style={{ color: "#fff", marginTop: "-1rem", fontSize: "1rem" }}>
           進位計算是在不同進位制度之間轉換數字的重要技能，
           <br />
           以下是一個可以通用於各種進位轉換的方式，
@@ -18,7 +18,7 @@ const About = () => {
           style={{
             color: "#fff",
             marginTop: "1rem",
-            fontSize: "2rem",
+            fontSize: "1.5rem",
             fontWeight: "bold",
           }}
         >
@@ -28,7 +28,7 @@ const About = () => {
           style={{
             color: "#fff",
             marginTop: "-1rem",
-            fontSize: "1.5rem",
+            fontSize: "1rem",
           }}
         >
           十進位：基數為10，使用數字0-9。
@@ -43,7 +43,7 @@ const About = () => {
           style={{
             color: "#fff",
             marginTop: "1rem",
-            fontSize: "2rem",
+            fontSize: "1.5rem",
             fontWeight: "bold",
           }}
         >
@@ -53,7 +53,7 @@ const About = () => {
           style={{
             color: "#fff",
             marginTop: "-1rem",
-            fontSize: "1.5rem",
+            fontSize: "1rem",
           }}
         >
           例如，將十進位數字42轉換為二進位。步驟是將42除以2，得到商21和餘數0，
@@ -66,7 +66,7 @@ const About = () => {
           style={{
             color: "#fff",
             marginTop: "1rem",
-            fontSize: "2rem",
+            fontSize: "1.5rem",
             fontWeight: "bold",
           }}
         >
@@ -76,7 +76,7 @@ const About = () => {
           style={{
             color: "#fff",
             marginTop: "-1rem",
-            fontSize: "1.5rem",
+            fontSize: "1rem",
           }}
         >
           例如，將二進位數字101010轉換為十進位。這可以通過將每一位數乘以2的冪次方，
@@ -88,7 +88,7 @@ const About = () => {
           style={{
             color: "#fff",
             marginTop: "1rem",
-            fontSize: "2rem",
+            fontSize: "1.5rem",
             fontWeight: "bold",
           }}
         >
@@ -98,14 +98,14 @@ const About = () => {
           style={{
             color: "#fff",
             marginTop: "-1rem",
-            fontSize: "1.5rem",
+            fontSize: "1rem",
           }}
         >
           例如，將八進位數字64轉換為十進位。這可以通過將每一位數乘以8的冪次方，然後相加得到。
           <br />
           在這個例子中，6*8^1 + 4*8^0 = 48 + 4 = 52。
         </p>
-        <h1 style={{ color: "#fff", marginTop: "2.5rem", fontSize: "1.5rem" }}>
+        <h1 style={{ color: "#fff", marginTop: "2.5rem", fontSize: "1rem" }}>
           這個通用方法可用於在不同進位制度之間進行轉換，只需根據目標進位制度的基數和原始數字的位數進行相應的計算即可。
         </h1>
       </div>
