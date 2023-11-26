@@ -30,10 +30,10 @@ const val = [
 const convert = (value, fromBase, toBase) => {
   const parsedValue = parseInt(
     value,
-    val.find((currency) => currency.value === fromBase).base
+    val.find((option) => option.value === fromBase).base
   );
   return parsedValue.toString(
-    val.find((currency) => currency.value === toBase).base
+    val.find((option) => option.value === toBase).base
   );
 };
 

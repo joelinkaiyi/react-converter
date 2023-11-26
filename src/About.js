@@ -2,15 +2,15 @@ import React from 'react'
 
 const About = () => {
     return (
-      <div style={{ textAlign: "left",marginLeft:'0.5rem'}}>
+      <div style={{ textAlign: "left",marginLeft:'0.5rem',flexWrap:'wrap'}}>
         <h1 style={{ color: "#fff", marginTop: "1rem", fontSize: "2rem" }}>
           通用的進位計算方法
         </h1>
         <p style={{ color: "#fff", marginTop: "-1rem", fontSize: "1rem" }}>
           進位計算是在不同進位制度之間轉換數字的重要技能，
-          <br />
+ 
           以下是一個可以通用於各種進位轉換的方式，
-          <br />
+   
           可用於將數字從一個進位制度轉換為另一個
         </p>
 
