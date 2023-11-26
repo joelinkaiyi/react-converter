@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import SouthIcon from "@mui/icons-material/South";
-import { Icon } from "@mui/material";
 const val = [
   {
     value: "binary",
@@ -41,8 +40,8 @@ const convert = (value, fromBase, toBase) => {
 export default function Selector() {
   const [fromBase, setFromBase] = React.useState("decimal");
   const [toBase, setToBase] = React.useState("binary");
-  const [value, setValue] = React.useState("0");
-  const [result, setResult] = React.useState("0");
+  const [value, setValue] = React.useState("");
+  const [result, setResult] = React.useState("");
 
   const handleFromBaseChange = (event) => {
     setFromBase(event.target.value);

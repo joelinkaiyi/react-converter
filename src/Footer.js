@@ -7,8 +7,7 @@ import { Box } from "@mui/material";
 export default function Footer() {
   return (
     <Box
-          sx={{
-        //   marginTop:'20.5rem',
+        sx={{
           padding: '2rem',
           borderTop:'0.063rem solid #404040',  
       }}
