@@ -1,8 +1,9 @@
 import * as React from "react";
+import { useState,useEffect } from 'react';
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
-import SouthIcon from "@mui/icons-material/South";
+import SwapVertIcon from "@mui/icons-material/SwapVert";
 const val = [
   {
     value: "binary",
@@ -38,25 +39,34 @@ const convert = (value, fromBase, toBase) => {
 };
 
 export default function Selector() {
-  const [fromBase, setFromBase] = React.useState("decimal");
-  const [toBase, setToBase] = React.useState("binary");
-  const [value, setValue] = React.useState("");
-  const [result, setResult] = React.useState("");
+  const [fromBase, setFromBase] = useState("decimal");
+  const [toBase, setToBase] = useState("binary");
+  const [value, setValue] = useState("");
+  const [result, setResult] = useState("");
+
+  useEffect(() => {
+    setResult(convert(value, fromBase, toBase));
+  }, [value, fromBase, toBase]);
 
   const handleFromBaseChange = (event) => {
     setFromBase(event.target.value);
-    setResult(convert(value, event.target.value, toBase));
   };
 
   const handleToBaseChange = (event) => {
     setToBase(event.target.value);
-    setResult(convert(value, fromBase, event.target.value));
   };
 
   const handleValueChange = (event) => {
     const newValue = event.target.value;
     setValue(newValue);
-    setResult(convert(newValue, fromBase, toBase));
+  };
+
+  const handleReverse = () => {
+    const tempFromBase = toBase;
+    const tempToBase = fromBase;
+    setFromBase(tempFromBase);
+    setToBase(tempToBase);
+    setResult(convert(value, tempFromBase, tempToBase));
   };
 
   return (
@@ -104,18 +114,30 @@ export default function Selector() {
           }}
         />
         <div>
-          <SouthIcon
+          <button
+            type="button"
+            onClick={handleReverse}
             style={{
-              color: "#fff",
+              borderRadius: "1.25rem",
               position: "relative",
               top: "3rem",
-              left: "0.1rem",
-              fontSize: "5rem",
+              textAlign: "center",
+              background: "none",
+              border: "none",
+              cursor:'pointer'
             }}
-          />
+          >
+            <SwapVertIcon
+              style={{
+                color: "#fff",
+                fontSize: "5rem",
+                marginTop: "0.5rem",
+              }}
+            />
+          </button>
         </div>
       </div>
-      <div style={{marginBottom:'14rem'}}>
+      <div style={{ marginBottom: "14rem" }}>
         <h2 style={{ color: "#fff", fontSize: "2rem", marginTop: "5rem" }}>
           轉換到
         </h2>
