@@ -142,7 +142,6 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-
             </Menu>
           </Box>
         </Toolbar>

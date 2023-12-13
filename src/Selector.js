@@ -33,10 +33,18 @@ const convert = (value, fromBase, toBase) => {
     value,
     val.find((option) => option.value === fromBase).base
   );
-  return parsedValue.toString(
+  var result = parsedValue.toString(
     val.find((option) => option.value === toBase).base
-  );
+  ).toUpperCase();
+ 
+  if (toBase === "octal") {
+    result = "0o" + result;
+  } else if (toBase === "hexadecimal") {
+    result = "0x" + result;
+  }
+  return result;
 };
+
 
 export default function Selector() {
   const [fromBase, setFromBase] = useState("decimal");
