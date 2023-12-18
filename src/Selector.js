@@ -118,7 +118,6 @@ export default function Selector() {
             marginLeft: "1rem",
             backgroundColor: "#fff",
             borderRadius: "0.625rem",
-            marginLeft: "1rem",
           }}
         />
         <div>
